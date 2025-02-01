@@ -29,19 +29,14 @@ git clone https://github.com/Santosh130602/bharatFD
 
 ## Setting Up Frontend
 
-1. Navigate to the frontend directory:
 
-```bash
-cd bharatFD/frontend
-```
-
-2. Install the required dependencies:
+1. Install the required dependencies:
 
 ```bash
 npm install
 ```
 
-3. Start the frontend development server:
+2. Start the frontend development server:
 
 ```bash
 npm start
@@ -56,7 +51,7 @@ This will launch the frontend on `http://localhost:3000`. Open this URL in your 
 1. Navigate to the backend directory:
 
 ```bash
-cd bharatFD/backend
+cd bharatFD
 ```
 
 2. Install the necessary backend dependencies:
