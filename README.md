@@ -1,70 +1,142 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BharatFD
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+BharatFD is a project that allows users to submit and view frequently asked questions (FAQs) with answers in different languages. The system supports adding, viewing, and fetching FAQs via a user-friendly frontend interface and an API backend.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before starting, make sure you have the following installed on your system:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (version 14 or higher)
+- **npm** (Node Package Manager)
+- **Postman** (for testing API endpoints)
 
-### `npm run build`
+### Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the BharatFD GitHub repository to your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/Santosh130602/bharatFD
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Setting Up Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Navigate to the frontend directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd bharatFD/frontend
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install the required dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+3. Start the frontend development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will launch the frontend on `http://localhost:3000`. Open this URL in your browser to access the frontend.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Setting Up Backend
 
-### Analyzing the Bundle Size
+1. Navigate to the backend directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd bharatFD/backend
+```
 
-### Making a Progressive Web App
+2. Install the necessary backend dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+3. Start the backend server using **nodemon**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+nodemon index.js
+```
 
-### Deployment
+This will run the backend API on `http://localhost:4000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## Testing the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Testing Frontend
+
+1. Open the frontend in your browser (`http://localhost:3000`).
+2. In the input fields:
+   - Enter a **question** and **answer** in their respective fields.
+   - Select a language from the dropdown.
+   - Click the "Translate" button to submit the FAQ and see the translated content.
+
+### Testing Backend with Postman
+
+#### 1. **POST Request to Add FAQ**
+
+To test the backend, make a **POST** request to the following URL:
+
+```
+http://localhost:4000/api/faqs
+```
+
+Use the following JSON in the request body to add a new FAQ:
+
+```json
+{
+  "question": "What is your name?",
+  "answer": "My name is Santosh Kumar Pal.",
+  "language": "en"
+}
+```
+
+#### 2. **GET Request to Fetch All FAQs**
+
+To fetch all FAQ data, make a **GET** request to:
+
+```
+http://localhost:4000/api/faqs
+```
+
+#### 3. **GET Request to Fetch FAQs for a Specific Language**
+
+To get FAQ data for a specific language, use this **GET** request:
+
+```
+http://localhost:4000/api/faqs/?lang=en
+```
+
+---
+
+## Frontend Access
+
+You can also view the FAQ data directly on the frontend once the backend is running. The FAQs will be displayed after submitting them through the frontend.
+
+---
+
+## Project Structure
+
+- **frontend**: Contains the React app for the user interface.
+- **backend**: Contains the Express.js API for managing FAQs.
+
+---
+
+## Developer Info
+
+- **Name**: Santosh Kumar Pal
+- **Email**: santoshbiet.cs2144@gmail.com
