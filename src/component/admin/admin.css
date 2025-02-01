@@ -1,0 +1,72 @@
+
+.admin-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .input-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .fetch-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .fetch-button:hover {
+    background-color: #45a049;
+  }
+  
+  .faq-list {
+    margin-top: 30px;
+  }
+  
+  .faq-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

@@ -1,0 +1,88 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.title1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(62, 62, 218);
+}
+.mainTitle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input-textarea,
+.input-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-textarea {
+  min-height: 100px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:disabled {
+  background-color: #ccc;
+}
+
+.result {
+  margin-top: 30px;
+}
+
+.result-box {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.result-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.result-text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
